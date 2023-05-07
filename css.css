@@ -1,0 +1,27 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 200px 300px;
+  grid-template-rows: 100px 200px 300px;
+}
+
+.grid-item {
+  border: 1px solid black;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: row-1-start;
+  grid-row-end: row-3-end;
+}
+
+/* @media screen and (max-width: 300px) {
+  .grid-container {
+    grid-template-columns: 10px 20px 30px;
+    grid-template-rows: 10px 20px 30px;
+  }
+} */
+
+@media screen {
+    .grid-container {
+        grid-template-columns: 20px 10px 300px;
+        grid-template-rows: 20px 10px 300px;
+    }
+}
